@@ -4,7 +4,7 @@ RAG system combining LangGraph and Ollama for local PDF retrieval and QA on tech
 
 ## 專案簡介
 
-LangGraph-RAG-Demo 利用 [LangGraph](https://github.com/langchain-ai/langgraph) workflow 與本地 [Ollama](https://ollama.com/) 大型語言模型，打造針對技術文件及 PDF 檔案的 RAG（Retrieval-Augmented Generation）問答系統，支援本地檔案檢索、文件自動摘要及關鍵資訊萃取。
+LangGraph-RAG-Demo 利用 [LangGraph](https://github.com/langchain-ai/langgraph) workflow 與本地 [Ollama](https://ollama.com/) 大型語言模型，打造針對技術文件及 PDF 檔案的 RAG（Retrieval-Augmented Generation）問答系統，支援本地檔案檢索、網路搜尋 兩種使用模式。
 
 ---
 
