@@ -21,8 +21,8 @@ def chunk_elements(unique_elements: List[PDFElement], min_len: int = 100) -> Lis
             chunk_meta["chunk_id"] = f"{e.metadata.element_id}_{i}"
             chunks.append({"text": t, "metadata": chunk_meta})
 
-    # 這裡的儲存會捨去頁面座標資訊（除非有要做PDF view高亮引用段落，單純RAG沒用到座標資訊）
-    # 從第一性原理出發思考功能，用不上。如果需要座標資訊，可以扁平成json或是單一欄位存metadata
+    # 儲存時移除頁面座標資訊 (coordinates)，因為單純 RAG 檢索不需要此資訊。
+    # 若未來需要支持 PDF 高亮或精確定位，可將座標資訊保留，或扁平成 JSON / 單一欄位存入 metadata。
     documents = [
         Document(
             page_content=c["text"],
