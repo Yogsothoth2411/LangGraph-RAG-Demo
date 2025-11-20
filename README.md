@@ -45,7 +45,7 @@ LangGraph-RAG-Demo/
 
 ### 環境需求
 
-- Python >= 3.10
+- Python >= 3.13.7
 - Docker、docker-compose
 - Ollama (本地語言模型管理工具)
 
